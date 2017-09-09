@@ -1,9 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head></head>
-<title>Opening page </title>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu|Lobster" rel="stylesheet">
+<title>lIMITLESS</title>
+<style>
+  #title{
+  font-size:30px;
+  font-family: Baloo tammudu;
+  text-align: center;
+}
+
+#caption{
+  font-family: Lobster;
+  text-align: center ;
+}
+
+
+hr{
+  width: 60%;
+  height: 3px;
+  background-color: #000000;
+}
+
+#mainimage{
+  width: 100%;
+  position: absolute;
+}
+
+#login-box{
+  width: 50%;
+  background-color: white;
+  position: absolute;
+  z-index: 20;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid red;
+  border-radius: 20px;
+  text-align: center;
+}
+
+input{
+  width: 100%;
+  border-radius: 5px;
+  height: 30px;
+  padding: 20px;
+  border: 1px solid black;
+}
+#login-btn{
+  width: 80%;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 16px;
+  font-size: 20px;
+  background-color: blue;
+  color: white;
+}
+</style>
+</head>
 <body>
-<h1>Limitless</h1>
-<h3>The Ultimate Quiz competition</h3>
+<!-- Start your code here -->
+
+
+
+<h1 id="title">Limitless</h1>
+  <p id="caption">The Ultimate Quiz competition</p>
+  <hr/>
+ 
+  <img id="mainimage" src="http://4.bp.blogspot.com/-s2Yc_9L0Kys/U-cDntfjh5I/AAAAAAAAEKg/2Obsp4mrPOE/s1600/25da824c92.jpg"/>
+ 
+  
+  
+  <div id="login-box">
+    <p style="font-family:Lobster;font-size:30;text-align:center;"><b>Login</b></p>
+    <input type="text" placeholder="Username :" style="margin:5px">
+    <input type="password" placeholder="Password :" style="margin:5px">
+    <button id="login-btn">Login</button>
+  </div>
+<!-- End your code here -->
 </body>
-</html>
