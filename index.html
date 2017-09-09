@@ -29,14 +29,15 @@ hr{
 
 #mainimage{
   width: 100%;
-  position: absolute;
   height:500px;
+  position: absolute;
   overflow:hidden;
   left:0;
+
 }
 
 #login-box{
-  width: 40%;
+  width: 30%;
   background-color: white;
   position: absolute;
   z-index: 20;
@@ -62,6 +63,15 @@ input{
   background-color: blue;
   color: white;
 }
+
+.parallax{
+   background-image: url("http://ajjuliani.com/wp-content/uploads/2016/07/Genius-Hour-Kid.png");
+   height:500px;
+   background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 @media screen and (max-width: 700px) {
     #login-box {
         width:80%;
@@ -73,6 +83,8 @@ input{
         padding: 10px;
 	}
 }
+
+
 </style>
 </head>
 <body>
@@ -83,17 +95,19 @@ input{
 <h1 id="title">Limitless</h1>
   <p id="caption">The Ultimate Quiz competition</p>
   <hr/>
- 
-  <img id="mainimage" src="http://ajjuliani.com/wp-content/uploads/2016/07/Genius-Hour-Kid.png"/>
- 
-  
-  
-  <div id="login-box">
+  <div>
+  <div class="parallax">
+      <div id="login-box">
     <p style="font-family:Lobster;font-size:30px;text-align:center;"><b>Login</b></p>
     <input type="text" placeholder="Username :" style="margin:5px">
     <input type="password" placeholder="Password :" style="margin:5px">
     <button id="login-btn">Login</button>
   </div>
+  </div>
+  
+
+  </div>
+
 <!-- End your code here -->
 </body>
 </html> 
