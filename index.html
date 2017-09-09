@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,14 +6,18 @@
 <title>lIMITLESS</title>
 <style>
   #title{
-  font-size:30px;
-  font-family: Baloo tammudu;
+  font-size:50px;
+  margin:0;
+  font-family: Lobster;
   text-align: center;
+ 
 }
 
 #caption{
+  margin:0;
   font-family: Lobster;
   text-align: center ;
+
 }
 
 
@@ -25,22 +30,24 @@ hr{
 #mainimage{
   width: 100%;
   position: absolute;
+  height:500px;
+  overflow:hidden;
+  left:0;
 }
 
 #login-box{
-  width: 50%;
+  width: 40%;
   background-color: white;
   position: absolute;
   z-index: 20;
   padding: 20px;
-  margin: 20px;
-  border: 1px solid red;
+  margin: 40px;
   border-radius: 20px;
   text-align: center;
 }
 
 input{
-  width: 100%;
+  width:80%;
   border-radius: 5px;
   height: 30px;
   padding: 20px;
@@ -55,6 +62,17 @@ input{
   background-color: blue;
   color: white;
 }
+@media screen and (max-width: 700px) {
+    #login-box {
+        width:80%;
+		text-align:center;
+		margin:20px;
+    }
+	input{
+	    height: 20px;
+        padding: 10px;
+	}
+}
 </style>
 </head>
 <body>
@@ -66,15 +84,16 @@ input{
   <p id="caption">The Ultimate Quiz competition</p>
   <hr/>
  
-  <img id="mainimage" src="http://4.bp.blogspot.com/-s2Yc_9L0Kys/U-cDntfjh5I/AAAAAAAAEKg/2Obsp4mrPOE/s1600/25da824c92.jpg"/>
+  <img id="mainimage" src="http://ajjuliani.com/wp-content/uploads/2016/07/Genius-Hour-Kid.png"/>
  
   
   
   <div id="login-box">
-    <p style="font-family:Lobster;font-size:30;text-align:center;"><b>Login</b></p>
+    <p style="font-family:Lobster;font-size:30px;text-align:center;"><b>Login</b></p>
     <input type="text" placeholder="Username :" style="margin:5px">
     <input type="password" placeholder="Password :" style="margin:5px">
     <button id="login-btn">Login</button>
   </div>
 <!-- End your code here -->
 </body>
+</html> 
